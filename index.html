@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>microbit-temperature</title>
+  <meta name="description" content="Read temperature data on BBC micro:bit boards with Web Bluetooth API.">
+  <meta name="keywords" content="microbit,web bluetooth api,pokio,pokiiio,ポキオ,京急は神">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#303F9F">
+  <meta property="og:title" content="microbit-temperature">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Read temperature data on BBC micro:bit boards with Web Bluetooth API.">
+  <meta property="og:url" content="https://pokiiio.github.io/microbit-temperature/">
+  <meta property="og:image" content="https://pokiiio.github.io/pokio.jpg">
+  <meta property="og:site_name" content="microbit-temperature">
+  <meta property="og:locale" content="ja_JP">
+  <script type="text/javascript" src="microbit.js"></script>
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: xx-large;
+    }
+
+    .background {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <input type="button" name="Start" value="Start" onClick="onClickStartButton()"></input>
+    <input type="button" name="Stop" value="Stop" onClick="onClickStopButton()"></input>
+    <div class="center">
+      <h1 name="Temperature" />
+    </div>
+  </div>
+</body>
+
+</html>
