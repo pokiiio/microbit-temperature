@@ -95,7 +95,7 @@ function updateTemperatureValue(temperature) {
     strG = (255 - diff * 16).toString(16);
   }
 
-  document.getElementsByClassName("background")[0].style.backgroundColor = "#" + strR + strG + strB;
+  document.body.style.backgroundColor = "#" + strR + strG + strB;
 }
 
 function findTemperatureService(server) {
